@@ -31,7 +31,7 @@ export default function Detalhes() {
         </p>
         <Link
           href={`https://wa.me/5583991032141?text=${encodeURIComponent(
-            `Olá, gostaria de mais informações sobre o ${selectedProperty.title}`
+            `Olá, gostaria de mais informações sobre o ${selectedProperty.title}, ${selectedProperty.building}`
           )}`}
           target="_blank"
           className="inline-block bg-black text-white py-3 px-6 hover:bg-gray-700 transition"
