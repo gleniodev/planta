@@ -16,7 +16,7 @@ const properties = [
     size: "69",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-01.png",
+    image: "/assets/uni-ap-01.webp",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const properties = [
     size: "110",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-02.png",
+    image: "/assets/uni-ap-02.webp",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const properties = [
     size: "111",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-03.png",
+    image: "/assets/uni-ap-03.webp",
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ const properties = [
     size: "181",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-04.png",
+    image: "/assets/uni-ap-04.webp",
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const properties = [
     size: "180",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-01.png",
+    image: "/assets/uni-ap-01.webp",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ const properties = [
     size: "57",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-57.png",
+    image: "/assets/noz-ap-57.webp",
   },
   {
     id: 7,
@@ -76,7 +76,7 @@ const properties = [
     size: "56",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-56.png",
+    image: "/assets/noz-ap-56.webp",
   },
   {
     id: 8,
@@ -86,7 +86,7 @@ const properties = [
     size: "56",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-56.png",
+    image: "/assets/noz-ap-56.webp",
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ const properties = [
     size: "60",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-60.png",
+    image: "/assets/noz-ap-60.webp",
   },
   {
     id: 10,
@@ -106,7 +106,7 @@ const properties = [
     size: "25",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-25.png",
+    image: "/assets/noz-ap-25.webp",
   },
   {
     id: 11,
@@ -116,7 +116,7 @@ const properties = [
     size: "27",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-27.png",
+    image: "/assets/noz-ap-27.webp",
   },
   {
     id: 12,
@@ -126,7 +126,7 @@ const properties = [
     size: "28",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-28.png",
+    image: "/assets/noz-ap-28.webp",
   },
   {
     id: 13,
@@ -136,7 +136,7 @@ const properties = [
     size: "29",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/noz-ap-29.png",
+    image: "/assets/noz-ap-29.webp",
   },
 
   // Adicione mais imóveis aqui conforme necessário
