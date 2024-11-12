@@ -38,6 +38,7 @@ import { Navbar } from "@/components/layouts/navbar";
 import Footer from "@/components/layouts/footer";
 import ConditionalFooter from "@/components/layouts/conditionalFooter"; // Componente para lógica do cliente
 import WhatsAppButton from "@/components/layouts/whatsappButton";
+import { PropertyProvider } from "@/context/PropertyContext";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -57,10 +58,12 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={montserrat.className}>
-        <Navbar />
-        <main>{children}</main>
-        <WhatsAppButton />
-        <ConditionalFooter /> {/* Renderiza o footer condicionalmente */}
+        <PropertyProvider>
+          <Navbar />
+          <main>{children}</main>
+          <WhatsAppButton />
+          <ConditionalFooter /> {/* Renderiza o footer condicionalmente */}
+        </PropertyProvider>
       </body>
     </html>
   );

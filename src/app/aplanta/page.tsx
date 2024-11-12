@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import bgSobre from "@/assets/bg-hero-aplanta2.png"; // Imagem da Hero
-import bgHistoria from "@/assets/nossa-historia.jpg"; // Imagem para a seção História
+import bgHistoria from "@/assets/nossa-historia3.webp"; // Imagem para a seção História
 import bgMissao from "@/assets/missao.jpg"; // Imagem para a seção Missão
 import Link from "next/link";
 
@@ -18,8 +18,9 @@ export default function APlanta() {
         viewport={{ once: true }} // Executa apenas uma vez
         className="relative flex items-center justify-center bg-cover bg-center pb-16 pt-24"
       >
+        {/*
         <section className="w-full max-w-4xl mx-auto">
-          {/* Contêiner da imagem com bordas arredondadas e altura fixa */}
+           Contêiner da imagem com bordas arredondadas e altura fixa 
           <div className="relative h-[300px]">
             <Image
               src={bgSobre}
@@ -28,7 +29,7 @@ export default function APlanta() {
               objectFit="cover" // Garante que a imagem cubra o contêiner
               className="filter grayscale "
             />
-            {/* Overlay com Opacidade */}
+            {/* Overlay com Opacidade 
             <div className="absolute inset-0 bg-black bg-opacity-50 "></div>
             Texto sobre a imagem
             <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
@@ -36,6 +37,28 @@ export default function APlanta() {
                 PLANTA TRANSFORMAÇÕES URBANAS
               </h1>
               <p className="text-lg mt-4 text-white">
+                Transformando paisagens urbanas com projetos únicos desde 2022.
+              </p>
+            </div>
+          </div>
+        </section>*/}
+        <section className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center py-10">
+            <div className="md:w-2/3">
+              <Image
+                src={bgSobre}
+                alt="Nossa História"
+                layout="responsive"
+                width={600}
+                height={400}
+                className="shadow-lg filter grayscale"
+              />
+            </div>
+            <div className="md:w-1/2 mb-12 md:mb-0 md:px-20 text-justify">
+              <h1 className="text-3xl md:text-2xl text-center text-primary-100 font-medium leading-relaxed mb-10">
+                PLANTA TRANSFORMAÇÕES URBANAS
+              </h1>
+              <p className="text-lg text-gray-700 text-center leading-relaxed mb-4">
                 Transformando paisagens urbanas com projetos únicos desde 2022.
               </p>
             </div>
@@ -103,36 +126,44 @@ export default function APlanta() {
           </h2>
           {/* Divisória */}
           <div className="w-full h-[1px] bg-gray-300 mx-auto mb-6"></div>
-          <p className="text-lg text-gray-700 leading-relaxed  max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 leading-relaxed  max-w-3xl mx-auto mb-8">
             A PLANTA acredita em gente, no poder de transformação de cada um.
             Acreditamos na organicidade, a empresa como um organismo vivo,
             pulsante. Acreditamos na união, na colaboração, no entusiasmo em
             realizar, no capricho em entregar, na satisfação em atender e em ser
             atendido.
           </p>
-          <p className="text-lg text-gray-700 leading-relaxed mt-8 max-w-3xl mx-auto">
+          <p className="text-lg text-gray-700 leading-relaxed mt-8 max-w-3xl mx-auto mb-8">
             Acreditamos que com nosso trabalho podemos transformar a paisagem
             urbana e trazer satisfação para quem vai viver a experiência dos
             nossos produtos e para quem está envolvido nesse universo de
             transformação conosco.
           </p>
+          <h2 className="text-3xl font-medium text-primary-100 mb-6 text-center">
+            Missão
+          </h2>
+          {/* Divisória */}
+          <div className="w-full h-[1px] bg-gray-300 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-700 leading-relaxed  max-w-3xl mx-auto mb-8">
+            Existimos para proporcionar segurança, tranquilidade, desejo e
+            valor, para todos que acreditam no nosso propósito de pensar,
+            executar com qualidade e entregar com felicidade, imóveis que
+            transformem positivamente o urbano.
+          </p>
+          <h2 className="text-3xl font-medium text-primary-100 mb-6 text-center">
+            Visão
+          </h2>
+          {/* Divisória */}
+          <div className="w-full h-[1px] bg-gray-300 mx-auto mb-6"></div>
+          <p className="text-lg text-gray-700 leading-relaxed mt-8 max-w-3xl mx-auto mb-8">
+            Promover a transformação urbana, o desenvolvimento e evolução de
+            pessoas e cenários, através da fabricação e entrega de imóveis, que
+            superem expectativas.
+          </p>
         </section>
       </motion.section>
 
-      {/* Seção Missão e Visão */}
-      <motion.section
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.2 }}
-        viewport={{ once: true }}
-        className="relative py-24 text-white"
-        style={{
-          backgroundImage: `url(${bgMissao.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="bg-black bg-opacity-60 absolute inset-0"></div>
+      {/* <div className="bg-black bg-opacity-60 absolute inset-0"></div>
         <div className="relative z-10 container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
@@ -153,8 +184,7 @@ export default function APlanta() {
               </p>
             </div>
           </div>
-        </div>
-      </motion.section>
+        </div> */}
 
       {/* Seção CTA Contato */}
       <motion.section

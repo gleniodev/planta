@@ -3,11 +3,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import bgHero from "@/assets/uni-fachada.png";
-import ap1 from "@/assets/uni-hall.jpeg";
-import ap2 from "@/assets/uni-fachada.png";
-import ap3 from "@/assets/uni-fachada.png";
-import ap4 from "@/assets/uni-fachada.png";
+import Link from "next/link";
+import { useProperty } from "@/context/PropertyContext";
 
 // Estrutura de dados com imóveis
 const properties = [
@@ -19,7 +16,7 @@ const properties = [
     size: "69",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/uni-ap-01.png",
   },
   {
     id: 2,
@@ -29,7 +26,7 @@ const properties = [
     size: "110",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/uni-ap-02.png",
   },
   {
     id: 3,
@@ -39,7 +36,7 @@ const properties = [
     size: "111",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/uni-ap-03.png",
   },
   {
     id: 4,
@@ -49,7 +46,7 @@ const properties = [
     size: "181",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/uni-ap-04.png",
   },
   {
     id: 5,
@@ -59,7 +56,7 @@ const properties = [
     size: "180",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/uni-ap-01.png",
   },
   {
     id: 6,
@@ -69,7 +66,7 @@ const properties = [
     size: "57",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-57.png",
   },
   {
     id: 7,
@@ -79,7 +76,7 @@ const properties = [
     size: "56",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-56.png",
   },
   {
     id: 8,
@@ -89,7 +86,7 @@ const properties = [
     size: "56",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-56.png",
   },
   {
     id: 9,
@@ -99,7 +96,7 @@ const properties = [
     size: "60",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-60.png",
   },
   {
     id: 10,
@@ -109,7 +106,7 @@ const properties = [
     size: "25",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-25.png",
   },
   {
     id: 11,
@@ -119,7 +116,7 @@ const properties = [
     size: "27",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-27.png",
   },
   {
     id: 12,
@@ -129,7 +126,7 @@ const properties = [
     size: "28",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-28.png",
   },
   {
     id: 13,
@@ -139,7 +136,7 @@ const properties = [
     size: "29",
     building: "NÓZ",
     status: "Lançamento",
-    image: "/assets/uni-fachada.png",
+    image: "/assets/noz-ap-29.png",
   },
 
   // Adicione mais imóveis aqui conforme necessário
@@ -149,6 +146,7 @@ const properties = [
 export default function Comprar() {
   const [filteredType, setFilteredType] = useState("Todos");
   const [filteredStatus, setFilteredStatus] = useState("Todos");
+  const { setSelectedProperty } = useProperty();
 
   // Filtro de imóveis
   const filteredProperties = properties.filter((property) => {
@@ -249,20 +247,27 @@ export default function Comprar() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <Image
-                src={property.image}
-                alt={property.title}
-                layout="responsive"
-                width={400}
-                height={300}
-                className="object-cover"
-              />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold">{property.title}</h2>
-                <h2 className="text-gray-600 mt-4">{property.building}</h2>
-                <p className="text-gray-600">{property.neighborhood}</p>
-                <p className="text-gray-600">{property.status}</p>
-              </div>
+              <section
+                className="flex flex-col w-340 h-340 cursor-pointer"
+                onClick={() => setSelectedProperty(property)}
+              >
+                <Link className="w-full h-full" href={"/comprar/detalhes"}>
+                  <div className="relative w-full h-full aspect-square overflow-hidden">
+                    <Image
+                      src={property.image}
+                      alt={property.title}
+                      layout="fill"
+                      objectFit="cover"
+                    />
+                  </div>
+                </Link>
+                <div className="p-4">
+                  <h2 className="text-xl font-semibold">{property.title}</h2>
+                  <h2 className="text-gray-600 mt-4">{property.building}</h2>
+                  <p className="text-gray-600">{property.neighborhood}</p>
+                  <p className="text-gray-600">{property.status}</p>
+                </div>
+              </section>
             </motion.div>
           ))
         ) : (

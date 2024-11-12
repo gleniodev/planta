@@ -59,7 +59,8 @@ export const Navbar = () => {
           ))}
         </nav>
         Entrar e cadastrar para desktop
-        <div className="hidden items-center space-x-6 md:flex">
+        {/*quando o login estiver ativo adicionar na div abaixo: md:flex */}
+        <div className="hidden items-center space-x-6 ">
           <Link href="/login" passHref>
             <span className="text-black hover:text-primary-300 cursor-pointer md:pr-4 lg:pr-8">
               LOGIN
@@ -110,15 +111,15 @@ export const Navbar = () => {
                 </span>
               </Link>
             ))}
-
-            <Link href="https://plataforma.metaverso.ltda/login" passHref>
+            {/*quando o login estiver ativo adicionar descomentar a tag LINK abaixo */}
+            {/* <Link href="https://plataforma.metaverso.ltda/login" passHref>
               <span
                 className="text-black hover:text-primary-300 block cursor-pointer py-2"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 LOGIN
               </span>
-            </Link>
+            </Link> */}
           </div>
         </nav>
       )}
