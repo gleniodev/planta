@@ -14,6 +14,8 @@ interface Property {
   building: string;
   status: string;
   image: string;
+  description: string;
+  gallery: string[];
 }
 
 interface PropertyContextType {
@@ -21,10 +23,14 @@ interface PropertyContextType {
   setSelectedProperty: (property: Property) => void;
 }
 
-const PropertyContext = createContext<PropertyContextType | undefined>(undefined);
+const PropertyContext = createContext<PropertyContextType | undefined>(
+  undefined
+);
 
 export const PropertyProvider = ({ children }: { children: ReactNode }) => {
-  const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
+  const [selectedProperty, setSelectedProperty] = useState<Property | null>(
+    null
+  );
 
   return (
     <PropertyContext.Provider value={{ selectedProperty, setSelectedProperty }}>

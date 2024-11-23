@@ -17,6 +17,13 @@ const properties = [
     building: "UNI 501",
     status: "Em Obras",
     image: "/assets/uni-ap-01.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 2,
@@ -27,6 +34,13 @@ const properties = [
     building: "UNI 501",
     status: "Em Obras",
     image: "/assets/uni-ap-02.webp",
+    description:
+      "Amplos espaços, culminando numa varanda privilegiada, pelo tamanho e sua vista, faz da proposta desse apartamento de 3 quartos com duas suítes do UNI 501 um convite ao bem morar.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 3,
@@ -37,6 +51,13 @@ const properties = [
     building: "UNI 501",
     status: "Em Obras",
     image: "/assets/uni-ap-03.webp",
+    description:
+      "Aconchegante, funcional e acolhedor, esses são os adjetivos encontrados na planta do apartamento de 3 quartos com duas suítes do UNI 501 com 111,85m² de generosos espaços.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 4,
@@ -47,6 +68,13 @@ const properties = [
     building: "UNI 501",
     status: "Em Obras",
     image: "/assets/uni-ap-04.webp",
+    description:
+      "Exclusividade, é essa a palavra que melhor traduz a união de plantas das coberturas do UNI 501, uma cobertura com aproximadamente 340m² traduzida em um lazer privativo e muito espaço e conforto em cada detalhe.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 5,
@@ -57,6 +85,13 @@ const properties = [
     building: "UNI 501",
     status: "Em Obras",
     image: "/assets/uni-ap-01.webp",
+    description:
+      "Além de todo o conforto de um apartamento amplo, aconchegante e funcional para toda a família, as coberturas do UNI 501 proporcionam momentos de lazer para toda família com sua área gourmet e seu solário.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 6,
@@ -67,6 +102,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-57.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 7,
@@ -77,6 +119,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-56.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 8,
@@ -87,6 +136,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-56.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 9,
@@ -97,6 +153,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-60.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 10,
@@ -107,6 +170,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-25.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 11,
@@ -117,6 +187,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-27.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 12,
@@ -127,6 +204,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-28.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
   {
     id: 13,
@@ -137,6 +221,13 @@ const properties = [
     building: "NÓZ",
     status: "Lançamento",
     image: "/assets/noz-ap-29.webp",
+    description:
+      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+    gallery: [
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04.webp",
+    ],
   },
 
   // Adicione mais imóveis aqui conforme necessário
