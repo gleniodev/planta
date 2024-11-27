@@ -43,7 +43,7 @@ export default function APlanta() {
           </div>
         </section>*/}
         <section className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center py-10">
+          <div className="flex flex-col md:flex-row items-center py-14">
             <div className="md:w-2/3">
               <Image
                 src={bgSobre}
@@ -145,10 +145,10 @@ export default function APlanta() {
           {/* Divisória */}
           <div className="w-full h-[1px] bg-gray-300 mx-auto mb-6"></div>
           <p className="text-lg text-gray-700 leading-relaxed  max-w-3xl mx-auto mb-8">
-            Existimos para proporcionar segurança, tranquilidade, desejo e
-            valor, para todos que acreditam no nosso propósito de pensar,
-            executar com qualidade e entregar com felicidade, imóveis que
-            transformem positivamente o urbano.
+            Existimos para proporcionar bem estar, segurança, conforto, desejo e
+            valor, para todos que acreditam no nosso propósito de transformar o
+            urbano. Através da concepção, execução e entrega de imóveis que
+            impactem positivamente o meio onde ele está inserido.
           </p>
           <h2 className="text-3xl font-medium text-primary-100 mb-6 text-center">
             Visão

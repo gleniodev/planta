@@ -16,13 +16,13 @@ const properties = [
     size: "69",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-01.webp",
+    image: "/assets/uni-ap-02-69m.webp",
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-02-69m.webp",
+      "/assets/uni-sala.webp",
+      "/assets/uni-quarto.webp",
     ],
   },
   {
@@ -33,13 +33,13 @@ const properties = [
     size: "110",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-02.webp",
+    image: "/assets/uni-ap-04-110.webp",
     description:
       "Amplos espaços, culminando numa varanda privilegiada, pelo tamanho e sua vista, faz da proposta desse apartamento de 3 quartos com duas suítes do UNI 501 um convite ao bem morar.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-04-110.webp",
+      "/assets/uni-sala.webp",
+      "/assets/uni-quarto.webp",
     ],
   },
   {
@@ -50,13 +50,13 @@ const properties = [
     size: "111",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-03.webp",
+    image: "/assets/uni-ap-01-111m.webp",
     description:
       "Aconchegante, funcional e acolhedor, esses são os adjetivos encontrados na planta do apartamento de 3 quartos com duas suítes do UNI 501 com 111,85m² de generosos espaços.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-01-111m.webp",
+      "/assets/uni-sala.webp",
+      "/assets/uni-quarto.webp",
     ],
   },
   {
@@ -67,32 +67,32 @@ const properties = [
     size: "181",
     building: "UNI 501",
     status: "Em Obras",
-    image: "/assets/uni-ap-04.webp",
+    image: "/assets/uni-ap-01-unificado-181m.webp",
     description:
       "Exclusividade, é essa a palavra que melhor traduz a união de plantas das coberturas do UNI 501, uma cobertura com aproximadamente 340m² traduzida em um lazer privativo e muito espaço e conforto em cada detalhe.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/uni-ap-01-unificado-181m.webp",
+      "/assets/uni-sala.webp",
+      "/assets/uni-quarto.webp",
     ],
   },
-  {
-    id: 5,
-    title: "Apartamento de 180m²",
-    type: "Residencial",
-    neighborhood: "Jardim Tavares",
-    size: "180",
-    building: "UNI 501",
-    status: "Em Obras",
-    image: "/assets/uni-ap-01.webp",
-    description:
-      "Além de todo o conforto de um apartamento amplo, aconchegante e funcional para toda a família, as coberturas do UNI 501 proporcionam momentos de lazer para toda família com sua área gourmet e seu solário.",
-    gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-    ],
-  },
+  // {
+  //   id: 5,
+  //   title: "Apartamento de 180m²",
+  //   type: "Residencial",
+  //   neighborhood: "Jardim Tavares",
+  //   size: "180",
+  //   building: "UNI 501",
+  //   status: "Em Obras",
+  //   image: "/assets/uni-ap-01.webp",
+  //   description:
+  //     "Além de todo o conforto de um apartamento amplo, aconchegante e funcional para toda a família, as coberturas do UNI 501 proporcionam momentos de lazer para toda família com sua área gourmet e seu solário.",
+  //   gallery: [
+  //     "/assets/uni-ap-04.webp",
+  //     "/assets/uni-ap-04.webp",
+  //     "/assets/uni-ap-04.webp",
+  //   ],
+  // },
   {
     id: 6,
     title: "Apartamento de 57m²",
@@ -127,23 +127,23 @@ const properties = [
       "/assets/uni-ap-04.webp",
     ],
   },
-  {
-    id: 8,
-    title: "Apartamento de 56m² SR",
-    type: "Residencial",
-    neighborhood: "Catolé",
-    size: "56",
-    building: "NÓZ",
-    status: "Lançamento",
-    image: "/assets/noz-ap-56.webp",
-    description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
-    gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-    ],
-  },
+  // {
+  //   id: 8,
+  //   title: "Apartamento de 56m² SR",
+  //   type: "Residencial",
+  //   neighborhood: "Catolé",
+  //   size: "56",
+  //   building: "NÓZ",
+  //   status: "Lançamento",
+  //   image: "/assets/noz-ap-56.webp",
+  //   description:
+  //     "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+  //   gallery: [
+  //     "/assets/uni-ap-04.webp",
+  //     "/assets/uni-ap-04.webp",
+  //     "/assets/uni-ap-04.webp",
+  //   ],
+  // },
   {
     id: 9,
     title: "Apartamento de 60m²",
@@ -249,7 +249,7 @@ export default function Comprar() {
   });
 
   return (
-    <section className="bg-white text-gray-800 mb-32">
+    <section className="bg-white text-gray-800 mb-32 md:px-14">
       {/* Hero Section */}
       <motion.section
         initial={{ opacity: 0, y: 50 }}
@@ -348,7 +348,8 @@ export default function Comprar() {
                       src={property.image}
                       alt={property.title}
                       layout="fill"
-                      objectFit="cover"
+                      objectFit="contain"
+                      className="p-4"
                     />
                   </div>
                 </Link>

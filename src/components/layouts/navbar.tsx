@@ -58,10 +58,10 @@ export const Navbar = () => {
             </Link>
           ))}
         </nav>
-        Entrar e cadastrar para desktop
+
         {/*quando o login estiver ativo adicionar na div abaixo: md:flex */}
-        <div className="hidden items-center space-x-6 ">
-          <Link href="/login" passHref>
+        <div className="hidden items-center space-x-6 md:flex ">
+          <Link href="" passHref>
             <span className="text-black hover:text-primary-300 cursor-pointer md:pr-4 lg:pr-8">
               LOGIN
             </span>
