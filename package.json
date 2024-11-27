@@ -23,6 +23,7 @@
     "react-dom": "^18",
     "react-typewriter-hook": "^1.0.2",
     "react-youtube": "^10.1.0",
+    "sharp": "^0.33.5",
     "swiper": "^11.1.4",
     "tailwind-merge": "^2.5.4"
   },

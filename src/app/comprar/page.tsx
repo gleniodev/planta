@@ -105,9 +105,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-57.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
   {
@@ -122,9 +122,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-56.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
   // {
@@ -156,9 +156,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-60.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
   {
@@ -173,9 +173,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-25.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
   {
@@ -190,9 +190,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-27.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
   {
@@ -207,9 +207,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-28.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
   {
@@ -224,9 +224,9 @@ const properties = [
     description:
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
-      "/assets/uni-ap-04.webp",
+      "/assets/noz-ap-29.webp",
+      "/assets/noz-sala.webp",
+      "/assets/noz-quarto.webp",
     ],
   },
 
