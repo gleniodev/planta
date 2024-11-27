@@ -1,64 +1,9 @@
-// // components/SobreNos.tsx
-
-// import Image from "next/image";
-// import React from "react";
-
-// import ImgQuemSomoas from "@/assets/Quem Somos.png";
-
-// const SobreNos = () => {
-//   return (
-//     <section className="flex flex-col justify-center items-center  text-gray-800 py-12 px-4 w-full min-w-[1200px]">
-//       <div className="min-w-[1200px] flex flex-col justify-center items-center gap-12">
-//         {/* Título da seção */}
-//         <div className="w-full text-center">
-//           <h2 className="text-3xl font-medium text-center text-primary-100 mb-6">
-//             A PLANTA
-//           </h2>
-
-//           {/* Divisória */}
-//           <div className="w-full h-[1px] bg-gray-300 mx-auto mb-6"></div>
-//         </div>
-
-//         {/* Texto da seção */}
-//         <blockquote className="text-center text-2xl italic mb-2 w-[700px]">
-//           “Na essência de cada projeto, buscamos não apenas ocupar um espaço,
-//           mas enriquecê-lo, com harmonia e respeito pelo ambiente que nos
-//           acolhe.”
-//         </blockquote>
-
-//         {/* Botão */}
-//         {/* <div className="text-center w-[240px]">
-//           <button className="w-full bg-transparent border border-gray-300 text-gray-800 px-4 py-2  hover:bg-gray-300 transition duration-300">
-//             Saiba mais
-//           </button>
-//         </div> */}
-//       </div>
-
-//       <div className="w-full py-20">
-//         {/* Utilize um ícone ou insira uma imagem com o componente Image do Next.js */}
-//         <Image
-//           src={ImgQuemSomoas} // Substitua pelo caminho correto do ícone
-//           alt="Ícone de seta"
-//           className="w-full"
-//         />
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default SobreNos;
-
-// components/SobreNos.tsx
-
-// components/SobreNos.tsx
-
-// components/SobreNos.tsx
-// components/SobreNos.tsx
-
-// components/SobreNos.tsx
+"use client";
 
 import Image from "next/image";
 import React from "react";
+import { useState } from "react";
+import YouTube from "react-youtube";
 
 // Importe o ícone de play, as aspas e a imagem do fundo
 import iconPlay from "@/assets/icon-play.svg";
@@ -68,6 +13,15 @@ import ImgQuemSomos from "@/assets/Quem Somos.png";
 import Link from "next/link";
 
 const SobreNos = () => {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const opts = {
+    height: "480",
+    width: "854",
+    playerVars: {
+      autoplay: 1,
+    },
+  };
+
   return (
     <section className="flex flex-col justify-center items-center text-gray-800 py-12 px-4 w-full">
       <div className="max-w-6xl w-full flex flex-col justify-center items-center gap-12 px-4">
@@ -135,7 +89,10 @@ const SobreNos = () => {
 
         {/* Botão de Play */}
         <div className="absolute flex justify-center items-center">
-          <button className="flex justify-center items-center">
+          <button
+            className="flex justify-center items-center"
+            onClick={() => setIsVideoOpen(true)}
+          >
             <Image
               src={iconPlay}
               alt="Play"
@@ -146,6 +103,18 @@ const SobreNos = () => {
           </button>
         </div>
       </div>
+
+      {isVideoOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
+          onClick={() => setIsVideoOpen(false)}
+        >
+          <YouTube
+            videoId="zZgI1bOMCww"
+            opts={opts}
+          />
+        </div>
+      )}
     </section>
   );
 };
