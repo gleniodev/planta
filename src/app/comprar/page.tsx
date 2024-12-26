@@ -96,6 +96,7 @@ const properties = [
   {
     id: 6,
     title: "Apartamento de 57m²",
+    
     type: "Residencial",
     neighborhood: "Catolé",
     size: "57",
