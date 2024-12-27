@@ -109,10 +109,7 @@ const SobreNos = () => {
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90"
           onClick={() => setIsVideoOpen(false)}
         >
-          <YouTube
-            videoId="zZgI1bOMCww"
-            opts={opts}
-          />
+          <YouTube videoId="zZgI1bOMCww" opts={opts} />
         </div>
       )}
     </section>
