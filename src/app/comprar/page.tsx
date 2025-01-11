@@ -21,8 +21,8 @@ const properties = [
       "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
     gallery: [
       "/assets/uni-ap-02-69m.webp",
-      "/assets/uni-sala.webp",
-      "/assets/uni-quarto.webp",
+      "/assets/uni-piscina.webp",
+      "/assets/uni-coworking.webp",
     ],
   },
   {
@@ -38,8 +38,8 @@ const properties = [
       "Amplos espaços, culminando numa varanda privilegiada, pelo tamanho e sua vista, faz da proposta desse apartamento de 3 quartos com duas suítes do UNI 501 um convite ao bem morar.",
     gallery: [
       "/assets/uni-ap-04-110.webp",
-      "/assets/uni-sala.webp",
-      "/assets/uni-quarto.webp",
+      "/assets/uni-piscina.webp",
+      "/assets/uni-lobby.webp",
     ],
   },
   {
@@ -55,8 +55,8 @@ const properties = [
       "Aconchegante, funcional e acolhedor, esses são os adjetivos encontrados na planta do apartamento de 3 quartos com duas suítes do UNI 501 com 111,85m² de generosos espaços.",
     gallery: [
       "/assets/uni-ap-01-111m.webp",
-      "/assets/uni-sala.webp",
-      "/assets/uni-quarto.webp",
+      "/assets/uni-piscina.webp",
+      "/assets/uni-lobby.webp",
     ],
   },
   {
@@ -72,8 +72,9 @@ const properties = [
       "Exclusividade, é essa a palavra que melhor traduz a união de plantas das coberturas do UNI 501, uma cobertura com aproximadamente 340m² traduzida em um lazer privativo e muito espaço e conforto em cada detalhe.",
     gallery: [
       "/assets/uni-ap-01-unificado-181m.webp",
-      "/assets/uni-sala.webp",
-      "/assets/uni-quarto.webp",
+      "/assets/uni-piscina.webp",
+      "/assets/uni-lobby.webp",
+      "/assets/uni-coworking.webp",
     ],
   },
   // {
@@ -104,11 +105,11 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-57.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+      "Conforto e ainda mais comodidade para a família, estão nessa proposta de planta do NÓZ, com duas suítes sendo uma reversível.",
     gallery: [
       "/assets/noz-ap-57.webp",
       "/assets/noz-sala.webp",
-      "/assets/noz-quarto.webp",
+      "/assets/noz-gourmet.webp",
     ],
   },
   {
@@ -121,11 +122,11 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-56.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+      "Pensado para famílias que desejam, além do conforto, morar com segurança e sofisticação. Essa é a proposta do NÓZ com dois quartos, sendo uma suíte.",
     gallery: [
       "/assets/noz-ap-56.webp",
-      "/assets/noz-sala.webp",
       "/assets/noz-quarto.webp",
+      "/assets/noz-gourmet.webp",
     ],
   },
   // {
@@ -155,11 +156,11 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-60.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+      "Conforto e ainda mais comodidade para a família, estão nessa proposta de planta do NÓZ, com duas suítes sendo uma reversível.",
     gallery: [
       "/assets/noz-ap-60.webp",
-      "/assets/noz-sala.webp",
       "/assets/noz-quarto.webp",
+      "/assets/noz-gourmet.webp",
     ],
   },
   {
@@ -172,12 +173,8 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-25.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
-    gallery: [
-      "/assets/noz-ap-25.webp",
-      "/assets/noz-sala.webp",
-      "/assets/noz-quarto.webp",
-    ],
+      "O NÓZ tráz uma planta versátil, aconchegante e prática, para quem quer trazer para o seu dia simplicidade, comodidade e conforto.",
+    gallery: ["/assets/noz-ap-25.webp", "/assets/noz-lobby.webp"],
   },
   {
     id: 11,
@@ -189,11 +186,11 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-27.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+      "Conforto e praticidade estão unidos nessa proposta de loft do NÓZ, ideal para quem gosta de viver confortavelmente em ambientes funcionais.",
     gallery: [
       "/assets/noz-ap-27.webp",
-      "/assets/noz-sala.webp",
-      "/assets/noz-quarto.webp",
+      "/assets/noz-loft.webp",
+      "/assets/noz-lobby.webp",
     ],
   },
   {
@@ -206,11 +203,11 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-28.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+      "Conforto e praticidade estão unidos nessa proposta de loft do NÓZ, ideal para quem gosta de viver confortavelmente em ambientes funcionais.",
     gallery: [
       "/assets/noz-ap-28.webp",
-      "/assets/noz-sala.webp",
-      "/assets/noz-quarto.webp",
+      "/assets/noz-loft.webp",
+      "/assets/noz-lobby.webp",
     ],
   },
   {
@@ -223,11 +220,11 @@ const properties = [
     status: "Lançamento",
     image: "/assets/noz-ap-29.webp",
     description:
-      "Bem estar, fuidez, conforto e momentos de descontração estão presentes nessa proposta de espaços nos apartamentos de dois quartos com uma suíte do UNI 501.",
+      "Conforto e praticidade estão unidos nessa proposta de loft do NÓZ, ideal para quem gosta de viver confortavelmente em ambientes funcionais.",
     gallery: [
       "/assets/noz-ap-29.webp",
-      "/assets/noz-sala.webp",
-      "/assets/noz-quarto.webp",
+      "/assets/noz-loft.webp",
+      "/assets/noz-lobby.webp",
     ],
   },
 

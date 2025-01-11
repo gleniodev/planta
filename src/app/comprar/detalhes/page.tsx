@@ -64,12 +64,17 @@ export default function Detalhes() {
 
         <Dialog open={showGallery} onOpenChange={setShowGallery}>
           <DialogTrigger asChild>
-            <button
-              onClick={openGallery}
-              className="mt-4 text-black py-2 px-4 rounded-lg hover:text-gray-700 transition flex gap-2"
-            >
-              Abrir Galeria <Images />
-            </button>
+            <div className="flex flex-col items-center">
+              <button
+                onClick={openGallery}
+                className="mt-4 text-black py-2 px-4 rounded-lg hover:text-gray-700 transition flex gap-2"
+              >
+                Abrir Galeria <Images />
+              </button>
+              <h3 className="text-xs text-black mt-4">
+                *Imagens meramente ilustrativas
+              </h3>
+            </div>
           </DialogTrigger>
 
           <DialogContent
@@ -84,9 +89,12 @@ export default function Detalhes() {
             ></button>
 
             {/* Carousel Responsivo */}
-            <div className="flex-1 flex items-center justify-center p-12 w-full h-full">
+            <div className="flex-1 flex items-center justify-center p-12 w-full h-full relative">
+              <h3 className="text-[10px] mb-4 text-black absolute left-4 bottom-0">
+                *Imagens meramente ilustrativas
+              </h3>
               <Carousel className="w-full h-full flex items-center justify-center">
-                <CarouselContent className="w-full h-full ">
+                <CarouselContent className="w-full h-full  ">
                   {selectedProperty.gallery.map((image, index) => (
                     <CarouselItem
                       key={index}
