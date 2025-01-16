@@ -48,14 +48,14 @@ const InstagramSection = () => {
         <div className="w-full h-[1px] bg-gray-300 mx-auto mb-14"></div>
       </div>
 
-      <div className="flex justify-center items-center gap-4">
+      <div className="flex justify-center items-center gap-4 md:w-2/3">
         {posts.map((post, index) => (
           <a
             href={post.href}
             key={index}
             target="_blank"
             rel="noopener noreferrer"
-            className="block relative "
+            className="block relative"
           >
             <Image
               src={post.imgSrc}
