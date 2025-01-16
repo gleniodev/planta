@@ -10,25 +10,25 @@ import post4 from "@/assets/post-insta-4.png";
 const InstagramSection = () => {
   const posts = [
     {
-      href: "https://www.instagram.com/p/C0WpX5gO16u/", // Link da postagem no Instagram
+      href: "https://www.instagram.com/p/DBgd3DGxArB/", // Link da postagem no Instagram
       imgSrc: "/assets/post-insta-1.jpg", // Caminho para a imagem local ou URL
       alt: "Descrição da imagem 1",
       text: "Seu Condomínio Vertical com Cara de Lar",
     },
     {
-      href: "https://www.instagram.com/Cx_wFLaMH6c/?img_index=1", // Link da postagem no Instagram
+      href: "https://www.instagram.com/p/DBgd2JuRsFU/", // Link da postagem no Instagram
       imgSrc: "/assets/post-insta-2.jpg", // Caminho para a imagem local ou URL
       alt: "Descrição da imagem 1",
       text: "Seu Condomínio Vertical com Cara de Lar",
     },
     {
-      href: "https://www.instagram.com/p/C4qRKVxOcEA/", // Link da postagem no Instagram
+      href: "https://www.instagram.com/p/DBgd2F_RaqE/", // Link da postagem no Instagram
       imgSrc: "/assets/post-insta-3.jpg", // Caminho para a imagem local ou URL
       alt: "Descrição da imagem 1",
       text: "Seu Condomínio Vertical com Cara de Lar",
     },
     {
-      href: "https://www.instagram.com/p/C4ix1hfu-IJ/", // Link da postagem no Instagram
+      href: "https://www.instagram.com/p/DE0coVhP2v_/", // Link da postagem no Instagram
       imgSrc: "/assets/post-insta-4.jpg", // Caminho para a imagem local ou URL
       alt: "Descrição da imagem 1",
       text: "Seu Condomínio Vertical com Cara de Lar",
