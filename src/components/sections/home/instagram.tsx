@@ -42,6 +42,7 @@ const InstagramSection = () => {
       <div className="w-full max-w-6xl text-center">
         <h2 className="text-3xl font-medium text-center text-primary-100 mb-6">
           @plantaevoce
+          
         </h2>
 
         {/* Divisória */}

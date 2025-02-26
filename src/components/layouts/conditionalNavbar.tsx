@@ -8,7 +8,10 @@ export default function ConditionalNavbar() {
 
   // Determinar imediatamente se o Navbar deve ser exibido
   const shouldShowNavbar =
-    pathname && !pathname.startsWith("/uni501") && pathname !== "/noz";
+    pathname &&
+    !pathname.startsWith("/uni501") &&
+    pathname !== "/noz" &&
+    pathname !== "/noz/book-digital";
 
   return <>{shouldShowNavbar && <Navbar />}</>;
 }
