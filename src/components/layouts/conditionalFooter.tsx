@@ -12,7 +12,13 @@ export default function ConditionalFooter() {
   // Verifica a rota e decide se o footer deve ser exibido
   useEffect(() => {
     // Exclui o footer nas rotas que começam com /produtos ou exatamente /projeto22
-    if (pathname.startsWith("/produtos") || pathname === "/projeto22" || pathname === "/uni501") {
+    if (
+      pathname.startsWith("/produtos") ||
+      pathname === "/projeto22" ||
+      pathname === "/uni501" ||
+      pathname === "/noz/book-digital" ||
+      pathname === "/linktree"
+    ) {
       setShowFooter(false); // Não mostrar o footer nessas páginas
     } else {
       setShowFooter(true); // Mostrar o footer nas outras páginas

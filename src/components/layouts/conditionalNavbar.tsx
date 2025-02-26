@@ -11,7 +11,8 @@ export default function ConditionalNavbar() {
     pathname &&
     !pathname.startsWith("/uni501") &&
     pathname !== "/noz" &&
-    pathname !== "/noz/book-digital";
+    pathname !== "/noz/book-digital" &&
+    pathname !== "/linktree";
 
   return <>{shouldShowNavbar && <Navbar />}</>;
 }
