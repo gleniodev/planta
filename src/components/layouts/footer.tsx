@@ -165,6 +165,14 @@ export default function Footer({ variant }: FooterProps) {
           <p className="text-sm">
             © Planta Transformações Urbanas - Todos os direitos reservados
           </p>
+          <p className="text-sm">
+            Desenvolvido por{" "}
+            <Link href="https://www.instagram.com/glenioanderson/
+            // 
+            // ">
+              Glenio Anderson
+            </Link>
+          </p>
         </div>
       </div>
     </footer>

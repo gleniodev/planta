@@ -9,7 +9,8 @@ import instagram from "@/assets/icon-instagram-black.png";
 import facebook from "@/assets/icon-facebook-black.png";
 import whatsapp from "@/assets/icon-whatsapp-black.png";
 import logoSymbol from "@/assets/logo-symbol.svg";
-import bgHero from "@/assets/bg-hero-white.png";
+
+
 
 export function HeroSection() {
   return (
