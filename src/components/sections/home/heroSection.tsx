@@ -4,13 +4,12 @@ import React, { useState, useEffect, useRef } from "react";
 import useTypewriter from "react-typewriter-hook";
 import Image from "next/image";
 import Link from "next/link";
+import bgHero from "@/assets/bg-hero.png";
 
 import instagram from "@/assets/icon-instagram-black.png";
 import facebook from "@/assets/icon-facebook-black.png";
 import whatsapp from "@/assets/icon-whatsapp-black.png";
 import logoSymbol from "@/assets/logo-symbol.svg";
-
-
 
 export function HeroSection() {
   return (
