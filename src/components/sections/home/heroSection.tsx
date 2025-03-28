@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import useTypewriter from "react-typewriter-hook";
 import Image from "next/image";
 import Link from "next/link";
-import bgHero from "@/assets/bg-hero.png";
+import bgHero from "@/assets/bg-hero-white.png";
 
 import instagram from "@/assets/icon-instagram-black.png";
 import facebook from "@/assets/icon-facebook-black.png";
