@@ -10,10 +10,9 @@ import {
   Paintbrush,
   Key,
 } from "lucide-react";
-import MapSection from "@/components/ui/map-section";
-import ImageGallery from "@/components/ui/image-gallery";
-import banner from "@/assets/uni-onze-upscale.webp";
-import logoUni from "@/assets/logo-uni.png";
+import MapSection from "../../components/ui/map-section";
+import ImageGallery from "../../components/ui/image-gallery";
+import banner from "@/assets/uni-onze.webp";
 
 export default function Home() {
   return (
@@ -30,7 +29,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute inset-0 flex flex-col justify-center px-6 md:px-16 lg:px-24">
           <div className="max-w-7xl mx-auto w-full">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between">
               <div className="mb-8 md:mb-0">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-2">
                   Um Projeto Atemporal
@@ -39,32 +38,15 @@ export default function Home() {
                   Feito por quem pensa em Campina
                 </h2>
               </div>
-              <div className="w-[20%] rigth-0 top-0">
-                <Image
-                  src={logoUni}
-                  alt="Imagem do empreendimento 1"
-                  className="object-cover carousel-item"
-                />
-              </div>
-              {/* <p className="text-gray-800 text-sm md:text-base">
+              <div className="bg-white/90 p-4 md:p-6 max-w-xs rounded-lg">
+                <p className="text-gray-800 text-sm md:text-base">
                   Um empreendimento único que combina elegância, conforto e
                   localização privilegiada para proporcionar uma experiência de
                   moradia excepcional.
-                </p> */}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Section 2 */}
-      <section className="relative w-full h-[80vh] md:h-[90vh]">
-        <div className="mb-8 md:mb-0">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-2">
-            Um Projeto Atemporal
-          </h1>
-          <h2 className="text-xl md:text-2xl text-white/90 font-light">
-            Feito por quem pensa em Campina
-          </h2>
         </div>
       </section>
 
