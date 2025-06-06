@@ -1,40 +1,46 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import Image from "next/image"
-import { X } from "lucide-react"
+import { useState } from "react";
+import Image from "next/image";
+import { X } from "lucide-react";
 
 interface GalleryImage {
-  src: string
-  alt: string
+  src: string;
+  alt: string;
 }
 
 export default function ImageGallery() {
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null)
+  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
   // Dados das imagens da galeria
   const galleryImages: GalleryImage[] = [
-    { src: "/placeholder.svg?height=500&width=500", alt: "Galeria 1" },
-    { src: "/placeholder.svg?height=500&width=500", alt: "Galeria 2" },
-    { src: "/placeholder.svg?height=500&width=500", alt: "Galeria 3" },
-    { src: "/placeholder.svg?height=500&width=500", alt: "Galeria 4" },
-    { src: "/placeholder.svg?height=500&width=500", alt: "Galeria 5" },
-    { src: "/placeholder.svg?height=500&width=500", alt: "Galeria 6" },
-  ]
+    { src: "/assets/uni-academia.webp", alt: "Galeria 1" },
+    { src: "/assets/uni-bike.webp", alt: "Galeria 2" },
+    { src: "/assets/uni-coworking.webp", alt: "Galeria 3" },
+    { src: "/assets/uni-lobby.webp", alt: "Galeria 4" },
+    { src: "/assets/uni-snackbar.webp", alt: "Galeria 5" },
+    { src: "/assets/uni-churrasqueira.webp", alt: "Galeria 6" },
+    { src: "/assets/uni-gourmet.webp", alt: "Galeria 7" },
+    { src: "/assets/uni-citytoy.webp", alt: "Galeria 8" },
+    { src: "/assets/uni-piscina-privativa.webp", alt: "Galeria 9" },
+    { src: "/assets/uni-redario.webp", alt: "Galeria 10" },
+    { src: "/assets/uni-pet.webp", alt: "Galeria 11" },
+    { src: "/assets/uni-piscina.webp", alt: "Galeria 12" },
+  ];
 
   // Função para abrir o modal com a imagem selecionada
   const openModal = (image: GalleryImage) => {
-    setSelectedImage(image)
+    setSelectedImage(image);
     // Impedir o scroll da página quando o modal está aberto
-    document.body.style.overflow = "hidden"
-  }
+    document.body.style.overflow = "hidden";
+  };
 
   // Função para fechar o modal
   const closeModal = () => {
-    setSelectedImage(null)
+    setSelectedImage(null);
     // Restaurar o scroll da página
-    document.body.style.overflow = "auto"
-  }
+    document.body.style.overflow = "auto";
+  };
 
   return (
     <>
@@ -58,7 +64,10 @@ export default function ImageGallery() {
 
       {/* Modal para visualização ampliada */}
       {selectedImage && (
-        <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4" onClick={closeModal}>
+        <div
+          className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
+          onClick={closeModal}
+        >
           <div
             className="relative max-w-4xl w-full max-h-[90vh] bg-white rounded-lg overflow-hidden"
             onClick={(e) => e.stopPropagation()} // Evita que o clique na imagem feche o modal
@@ -81,6 +90,5 @@ export default function ImageGallery() {
         </div>
       )}
     </>
-  )
+  );
 }
-

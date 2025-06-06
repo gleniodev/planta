@@ -21,7 +21,7 @@ export default function EmpreendimentosSection() {
           className="relative group h-[40vh] overflow-hidden rounded-xl"
         >
           <Link
-            href="" ///produtos/uni501
+            href="/produtos/uni501"
             className="block h-full w-full relative"
           >
             <Image
