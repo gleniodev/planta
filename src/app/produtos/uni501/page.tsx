@@ -286,7 +286,7 @@ export default function Home() {
             <h2 className="text-3xl font-medium text-center text-black">
               Status da Obra
             </h2>
-            <StatusItem percentage={67} />
+            <StatusItem percentage={67} title={""} icon={undefined} />
           </div>
 
           <div className="flex flex-wrap justify-center gap-6">
