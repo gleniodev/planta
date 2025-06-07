@@ -282,9 +282,13 @@ export default function Home() {
       {/* 5. Status da Obra */}
       <section className="py-16 px-6 md:px-16 lg:px-24">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl font-medium mb-8 text-center text-black">
-            Status da Obra
-          </h2>
+          <div className="flex flex-col justify-center items-center mb-16 gap-4">
+            <h2 className="text-3xl font-medium text-center text-black">
+              Status da Obra
+            </h2>
+            <StatusItem percentage={67} />
+          </div>
+
           <div className="flex flex-wrap justify-center gap-6">
             <StatusItem
               title="Preparação do Terreno"
@@ -481,7 +485,7 @@ function StatusItem({
   icon: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-sm border border-gray-100 w-[180px] transition-transform hover:scale-105">
+    <div className="flex flex-row items-center bg-white p-6 rounded-lg shadow-sm border border-gray-100 w-[480px] transition-transform hover:scale-105 gap-4">
       <div className="mb-3">{icon}</div>
       <h3 className="text-lg font-medium text-black mb-2">{title}</h3>
       <div className="w-full h-3 bg-gray-200 rounded-full overflow-hidden">
