@@ -18,6 +18,10 @@ import {
   Flower2,
   Blocks,
   Headphones,
+  BrickWall,
+  Pickaxe,
+  Bath,
+  PaintRoller,
 } from "lucide-react";
 import MapSection from "@/components/ui/map-section";
 import ImageGallery from "@/components/ui/image-gallery";
@@ -277,35 +281,40 @@ export default function Home() {
 
       {/* 5. Status da Obra */}
       <section className="py-16 px-6 md:px-16 lg:px-24">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-medium mb-8 text-center text-black">
             Status da Obra
           </h2>
           <div className="flex flex-wrap justify-center gap-6">
             <StatusItem
-              title="Projeto básico"
+              title="Preparação do Terreno"
               percentage={100}
-              icon={<FileText className="w-8 h-8 text-black" />}
-            />
-            <StatusItem
-              title="Fundação"
-              percentage={50}
-              icon={<Building className="w-8 h-8 text-black" />}
+              icon={<Pickaxe className="w-8 h-8 text-black" />}
             />
             <StatusItem
               title="Estrutura"
-              percentage={10}
+              percentage={99}
+              icon={<Building className="w-8 h-8 text-black" />}
+            />
+            <StatusItem
+              title="Esquadrias"
+              percentage={35}
               icon={<Columns className="w-8 h-8 text-black" />}
             />
             <StatusItem
-              title="Acabamento"
-              percentage={0}
-              icon={<Paintbrush className="w-8 h-8 text-black" />}
+              title="Alvenaria"
+              percentage={96}
+              icon={<BrickWall className="w-8 h-8 text-black" />}
             />
             <StatusItem
-              title="Entrega"
-              percentage={0}
-              icon={<Key className="w-8 h-8 text-black" />}
+              title="Instalações"
+              percentage={55}
+              icon={<Bath className="w-8 h-8 text-black" />}
+            />
+            <StatusItem
+              title="Acabamentos"
+              percentage={67}
+              icon={<PaintRoller className="w-8 h-8 text-black" />}
             />
           </div>
         </div>
