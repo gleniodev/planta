@@ -39,7 +39,7 @@ export function HeroSection() {
         </Link>
         <Link
           href={
-            "https://api.whatsapp.com/send/?phone=5583991032141&text=Ol%C3%A1!+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+UNI+501.&type=phone_number&app_absent=0"
+            "https://api.whatsapp.com/send/?phone=5583991032141&text=Ol%C3%A1!+Gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+o+portfólio+da+planta.&type=phone_number&app_absent=0"
           }
           target="_blank"
         >

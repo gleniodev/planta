@@ -58,6 +58,8 @@ export default function Home() {
     height: "480",
     width: "854",
     playerVars: {
+
+      
       autoplay: 1,
     },
   };

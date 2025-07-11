@@ -45,12 +45,13 @@ export default function RootLayout({
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-PMG6HLLX"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-WKQPV237"
             height="0"
             width="0"
-            style={{ display: "none", visibility: "hidden" }}
+            className="hidden"
           ></iframe>
         </noscript>
+
         {/* End Google Tag Manager (noscript) */}
 
         <PropertyProvider>
