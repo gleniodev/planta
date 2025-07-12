@@ -4,16 +4,25 @@ import { useState } from "react";
 import Image from "next/image";
 import { X } from "lucide-react";
 
+// Tipo das imagens
 interface GalleryImage {
   src: string;
   alt: string;
 }
 
-export default function ImageGallery() {
+// Tipo restrito para variant
+type Variant = "uni" | "noz";
+
+// Props do componente
+interface ImageGalleryProps {
+  variant: Variant;
+}
+
+export default function ImageGallery({ variant }: ImageGalleryProps) {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
 
-  // Dados das imagens da galeria
-  const galleryImages: GalleryImage[] = [
+  // Dados das imagens da Uni
+  const uniImages: GalleryImage[] = [
     { src: "/assets/uni-academia.webp", alt: "Galeria 1" },
     { src: "/assets/uni-bike.webp", alt: "Galeria 2" },
     { src: "/assets/uni-coworking.webp", alt: "Galeria 3" },
@@ -28,17 +37,40 @@ export default function ImageGallery() {
     { src: "/assets/uni-piscina.webp", alt: "Galeria 12" },
   ];
 
-  // Função para abrir o modal com a imagem selecionada
+  // Dados das imagens da Noz
+  const nozImages: GalleryImage[] = [
+    { src: "/assets/noz-academia.webp", alt: "Galeria 1" },
+    { src: "/assets/noz-delivery.webp", alt: "Galeria 2" },
+    { src: "/assets/noz-coworking.webp", alt: "Galeria 3" },
+    { src: "/assets/noz-lobby.webp", alt: "Galeria 4" },
+    { src: "/assets/noz-pet.webp", alt: "Galeria 5" },
+    { src: "/assets/noz-piscina.webp", alt: "Galeria 6" },
+    { src: "/assets/noz-lavanderia.webp", alt: "Galeria 7" },
+    { src: "/assets/noz-ap-1.webp", alt: "Galeria 8" },
+    { src: "/assets/noz-espaco-kids.webp", alt: "Galeria 9" },
+    { src: "/assets/noz-sala-ap.webp", alt: "Galeria 10" },
+    { src: "/assets/noz-suite.webp", alt: "Galeria 11" },
+    { src: "/assets/noz-ap.webp", alt: "Galeria 12" },
+  ];
+
+  // Lookup de variants
+  const galleryMapping: Record<Variant, GalleryImage[]> = {
+    uni: uniImages,
+    noz: nozImages,
+  };
+
+  // Seleciona a lista com fallback seguro
+  const galleryImages = galleryMapping[variant] ?? [];
+
+  // Abrir modal
   const openModal = (image: GalleryImage) => {
     setSelectedImage(image);
-    // Impedir o scroll da página quando o modal está aberto
     document.body.style.overflow = "hidden";
   };
 
-  // Função para fechar o modal
+  // Fechar modal
   const closeModal = () => {
     setSelectedImage(null);
-    // Restaurar o scroll da página
     document.body.style.overflow = "auto";
   };
 
@@ -62,7 +94,7 @@ export default function ImageGallery() {
         ))}
       </div>
 
-      {/* Modal para visualização ampliada */}
+      {/* Modal */}
       {selectedImage && (
         <div
           className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center p-4"
@@ -70,7 +102,7 @@ export default function ImageGallery() {
         >
           <div
             className="relative max-w-4xl w-full max-h-[90vh] bg-white rounded-lg overflow-hidden"
-            onClick={(e) => e.stopPropagation()} // Evita que o clique na imagem feche o modal
+            onClick={(e) => e.stopPropagation()}
           >
             <div className="relative aspect-[4/3] w-full">
               <Image

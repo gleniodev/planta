@@ -326,7 +326,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-medium mb-8 lg:mb-12 text-black text-center">
             Galeria de Imagens
           </h2>
-          <ImageGallery />
+          <ImageGallery variant={"uni"} />
         </div>
       </section>
 

@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import bgUNI from "@/assets/uni-piscina.png";
 import logoUNI from "@/assets/logo-uni.png";
 import logoNOZ from "@/assets/logo-noz.svg";
-import bgNOZ from "@/assets/noz-ap.jpg";
+import bgNOZ from "@/assets/noz-ap.webp";
 
 export default function EmpreendimentosSection() {
   return (

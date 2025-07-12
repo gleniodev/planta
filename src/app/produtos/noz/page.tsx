@@ -4,15 +4,9 @@ import type React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import {
-  Play,
   Waves,
-  ChevronLeft,
-  ChevronRight,
-  FileText,
   Building,
   Columns,
-  Paintbrush,
-  Key,
   Dumbbell,
   Utensils,
   Flower2,
@@ -22,16 +16,14 @@ import {
   Pickaxe,
   Bath,
   PaintRoller,
+  Dog,
 } from "lucide-react";
 import MapSection from "@/components/ui/map-section";
 import ImageGallery from "@/components/ui/image-gallery";
 import iconPlay from "@/assets/icon-play.svg";
-import banner from "@/assets/uni-onze-upscale.webp";
-import logoUni from "@/assets/logo-uni.png";
-import heroImage from "@/assets/uni-fachada-2.webp";
-import pracaImage from "@/assets/uni-praca.webp";
-import jardimTavares from "@/assets/jardim-tavares.webp";
-import bgVideoImg from "@/assets/bg-video-uni.webp";
+import heroImage from "@/assets/noz-fachada-2.webp";
+import fachadaNoz from "@/assets/noz-fachada-3.webp";
+import catole from "@/assets/catole.webp";
 import YouTube from "react-youtube";
 import ImgQuemSomos from "@/assets/Quem Somos.png";
 import {
@@ -42,17 +34,40 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Link from "next/link";
+import MapSectionNoz from "@/components/ui/map-section-noz";
 
 const gallery = [
-  { image: "/assets/uni-ap-01-111m.webp", index: 1 },
-  { image: "/assets/uni-ap-02-69m.webp", index: 2 },
-  { image: "/assets/uni-ap-03-69m.webp", index: 3 },
-  // { image: "/assets/uni-ap-04-110.webp", index: 4 },
-  { image: "/assets/uni-ap-01-unificado-181m.webp", index: 4 },
+  {
+    image: "/assets/noz-ap-25.webp",
+    index: 1,
+    subtitle: "Planta Final 01",
+  },
+  {
+    image: "/assets/noz-ap-27.webp",
+    index: 2,
+    subtitle: "Planta Final 02",
+  },
+  {
+    image: "/assets/noz-ap-28.webp",
+    index: 3,
+    subtitle: "Planta Final 03",
+  },
+  {
+    image: "/assets/noz-ap-29.webp",
+    index: 4,
+    subtitle: "Planta Final 04",
+  },
+  {
+    image: "/assets/noz-ap-56.webp",
+    index: 5,
+    subtitle: "Planta Final 04",
+  },
 ];
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [isVideoOpenJardimTavares, setIsVideoOpenJardimTavares] =
+    useState(false);
   const opts = {
     height: "480",
     width: "854",
@@ -88,25 +103,21 @@ export default function Home() {
               <div className="space-y-6">
                 <div className="border-2 border-gray-200 p-6 lg:p-8 ">
                   <h2 className="text-base sm:text-lg text-primary-100 font-medium leading-relaxed">
-                    Em construção – Rua Arquelino de Souza Guimarães 501, Jardim
-                    Tavares.
+                    Nasceu da pluralidade do público que o inspira e da
+                    segurança e aconchego pensado para abraçá-lo.
                   </h2>
                 </div>
 
                 <div className="border-2 border-gray-200 p-6 lg:p-8  space-y-4">
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    UNI vem da exclusividade de um projeto único e 501 era o
-                    número de uma das onde o projeto foi edificado, no charmoso
-                    bairro Jardim Tavares
-                  </p>
-                  <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                    Localizado em um dos pontos mais altos de Campina Grande, o
-                    UNI 501, do alto dos seus 22 andares, privilegia, entre
-                    outras coisas, a vista e o clima serrano da nossa Rainha da
-                    Borborema.
+                    Um projeto charmoso que veio conversar com o agitado bairro
+                    do Catolé. Pensado para um público jovem e dinâmico, que
+                    gosta de curtir a essência de um bairro vibrante e cheio de
+                    vida.
                   </p>
                   <p className="text-base sm:text-lg text-gray-700 leading-relaxed font-medium">
-                    Arquitetura – CRN Arquitetura
+                    Em construção – Rua Aluísio Cunha Lima N°535 Arquitetura –
+                    Yane Barreto Arquitetura
                   </p>
                 </div>
               </div>
@@ -160,32 +171,33 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8">
               <h2 className="text-2xl sm:text-3xl font-medium text-center lg:text-left text-primary-100">
-                O PROJETO
+                ‘’Arquitetura que acolhe respira e se conecta’’
               </h2>
 
               <div className="space-y-4">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                  Um projeto atemporal, o UNI 501 nasceu de ideias de
-                  campinenses para pessoas de Campina, através de eventos de
-                  cocriação, traduzidos pelo escritório CRN, em uma arquitetura
-                  contemporânea, elegante e funcional, onde contemplar e
-                  conversar com o entorno do charmoso bairro Jardim Tavares foi
-                  a maior inspiração.
+                  Localizado em um dos bairros mais nobres da cidade: o CATOLÉ!
+                  Uma Das regiões mais queridas e completas de Campina Grande, o
+                  Catolé é sinônimo de conforto, legado e movimento. Com toda
+                  sua história, tradição e a essência de ser DIVERSO. Com lares,
+                  famílias, feiras,shoppings, lojas, escolas, igrejas, fámacias,
+                  o Parque da Criança e um crescimento exponencial do mercado
+                  imobiliário.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                  Uma arquitetura flúida, onde generosas varandas e grandes
-                  janelas abrem, para o UNI 501, o cenário perfeito à
-                  contemplação do seu entorno, ao conforto gerado pela
-                  ventilação abundante do bairro e pela amplitude ocasionada
-                  pelas suas aberturas. Um movimento de traços que inserem o UNI
-                  501 ao Jardim Tavares de forma harmoniosa e convidativa.
+                  A arquitetura do NÓZ nasce do olhar sensível de quem entende
+                  que morar é mais do que ocupar um espaço — é viver com
+                  presença, conforto e beleza. Cada linha, cada escolha de cor,
+                  cada detalhe da fachada foi pensado para criar um
+                  empreendimento que conversa com a cidade e acolhe quem passa,
+                  quem mora, quem visita.
                 </p>
               </div>
             </div>
 
-            <div className="relative h-64 sm:h-80 lg:h-96  overflow-hidden">
+            <div className="relative h-64 sm:h-80 lg:h-full  overflow-hidden">
               <Image
-                src={pracaImage}
+                src={fachadaNoz}
                 alt="Imagem do empreendimento"
                 fill
                 className="object-cover"
@@ -197,55 +209,71 @@ export default function Home() {
           <div className="mt-16 lg:mt-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               <div className="order-1">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-primary-100 font-medium leading-tight lg:!leading-[48px] mb-8 lg:mb-12">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-primary-100 font-medium leading-tight lg:!leading-[48px] mb-8 lg:mb-12 text-justify">
                   A união de ideias, realidades, necessidades e repertórios trás
-                  para o UNI 501 a pluralidade e a versatilidade que os
-                  arquitetos Ricardo Nogueira e Cristiano Rolim imprimiram em
-                  cada detalhe, para fazer do 501 um endereço de desejo.
+                  para o NÓZ a pluralidade e a versatilidade que a arquiteta
+                  Yanne Barreto imprimiu em cada detalhe, para fazer do NÓZ um
+                  endereço de desejo.
                 </h3>
               </div>
 
-              <div className="order-1 lg:order-2 space-y-4 max-h-80 lg:max-h-96 overflow-y-auto pr-2">
+              <div className="order-1 lg:order-2 space-y-4 max-h-80 lg:max-h-96 overflow-y-auto pr-2 text-justify">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Com uma arquitetura moderna, perene e orgânica, o UNI 501 se
-                  insere de forma harmônica ao local mais desejado do Jardim
-                  Tavares, um bairro rodeado por belíssimos casarões das décadas
-                  de 70 e 80, onde a tranquilidade faz morada e, acordar ao som
-                  dos passarinhos, não é surpresa para quem tem a felicidade de
-                  viver esse lugar.
+                  Com formas limpas, tons suaves e materiais naturais, o NÓZ
+                  traduz a leveza da vida contemporânea. O concreto se equilibra
+                  com a vegetação, a luz natural percorre os ambientes, e os
+                  espaços internos se integram de forma fluida — permitindo
+                  múltiplas formas de habitar.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Pensado para famílias em seus mais diversos momentos, o UNI
-                  501 trouxe para os seus 68 apartamentos o conforto e a
-                  versatilidade necessários a quem busca viver e morar bem. São
-                  3 tipos de planta padrão, porém com a possibilidade de união
-                  de plantas trazendo ainda mais conforto e espaço abre-se um
-                  leque de possibilidades que só um projeto versátil e moderno
-                  pode trazer, uma vez que ele foi pensado assim.
+                  No térreo, a arquitetura se abre para a cidade. Áreas
+                  compartilhadas, lounges aconchegantes, espaços ao ar livre —
+                  tudo foi desenhado para favorecer o encontro, a gentileza
+                  urbana, e o contato com a natureza presente no bairro do
+                  Catolé.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Os equipamentos de lazer e bem estar que fazem parte do
-                  empreendimento faz com que ele seja ainda mais exclusivo e
-                  desejado. Uma academia no décimo primeiro andar (ONZE), gormet
-                  view ou uma piscina exclusiva sob reserva, são apenas algumas
-                  possibilidades a serem vividas por quem irá desfrutar dessa
-                  morada.
+                  O NÓZ não impõe. Ele pertence. É um projeto que respeita o
+                  tempo, o lugar e as pessoas. E é por isso que, ao olhar para
+                  ele, sentimos: aqui a vida faz sentido.
+                </p>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed before:content-['“'] after:content-['”'] italic">
+                  Viver e sentir a vida: esse é sempre o meu ponto de partida ao
+                  iniciar um novo projeto.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
-                  Os seus diversos jardins, pensados para proporcionar bem estar
-                  e acolhimento, estão presentes desde sua entrada até sua
-                  fachada, através de um jardim vertical que cobre parte dela,
-                  quebrando a frieza do concreto. O toque tropical do projeto
-                  paisagístico de Gilda Maldonado trouxe ao UNI toda
-                  organicidade e aconchego em harmonia com cada ambiente.
+                  Meu primeiro olhar é sempre voltado para as pessoas — para
+                  entender, com cuidado e sensibilidade, suas necessidades no
+                  dia a dia. Foi com esse propósito que nasceu o NÓZ: pensado
+                  para oferecer, com plenitude, o melhor contexto de vida aos
+                  seus usuários.
+                </p>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                  A versatilidade de viver no bairro Catolé me encanta. A
+                  praticidade, a segurança e a possibilidade de uma vivência
+                  mais presente foram as maiores inspirações na concepção deste
+                  projeto. O <strong>NÓZ</strong> foi idealizado como um
+                  empreendimento completo, com espaços compartilhados que
+                  acolhem e dão suporte real ao cotidiano. São áreas ao ar livre
+                  para contemplação, lounges aconchegantes de convivência e
+                  ambientes que favorecem a gentileza urbana — tudo em harmonia
+                  com a atmosfera verde e viva que o Catolé nos oferece.
+                </p>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                  O <strong>NÓZ</strong> é, em cada detalhe, feito para servir
+                  bem a quem vive ali.
+                </p>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                  Ser <strong>NÓZ</strong> e viver no Catolé é, sem dúvida, uma
+                  escolha que faz sentido.
                 </p>
               </div>
             </div>
 
             <div className="mt-12 lg:mt-16">
-              <h4 className="text-lg sm:text-xl lg:text-2xl text-primary-100 font-medium leading-relaxed text-center lg:text-left">
-                São 68 apartamentos com plantas que variam de 69m² a 111m², com
-                a possibilidade de uniões chegando a 181m².
+              <h4 className="text-lg sm:text-xl lg:text-3xl text-primary-100 font-medium leading-relaxed text-center ">
+                São 45 apartamentos e 45 Lofts com plantas que variam de 26m² a
+                60m².
               </h4>
             </div>
           </div>
@@ -253,7 +281,7 @@ export default function Home() {
       </section>
 
       {/* 4. Diferenciais */}
-      <section className="py-16 sm:py-20 lg:py-24">
+      <section className="py-16 sm:py-20 lg:py-8 lg:mb-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8">
@@ -261,14 +289,14 @@ export default function Home() {
                 Diferenciais
               </h2>
               <p className="text-xl sm:text-2xl lg:text-3xl text-gray-700 leading-relaxed text-center lg:text-left">
-                Por ter se originado de ideias de um público plural o UNI 501 é
-                um projeto repleto de diferencias
+                Por ter se originado de ideias de um público plural o NÓZ é um
+                projeto repleto de diferencias
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               <DiferencialItem
-                title="Piscina com uso exclusivo"
+                title="Piscina na cobertura"
                 icon={<Waves className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <DiferencialItem
@@ -276,14 +304,18 @@ export default function Home() {
                 icon={<Dumbbell className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <DiferencialItem
-                title="Gourmet com vista panorâmica"
+                title="Espaço Gourmet View"
                 icon={<Utensils className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <DiferencialItem
-                title="Espaço relax"
+                title="Coworking"
                 icon={
                   <Headphones className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
                 }
+              />
+              <DiferencialItem
+                title="Petplace"
+                icon={<Dog className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <DiferencialItem
                 title="Integração de espaços"
@@ -304,7 +336,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-medium mb-8 lg:mb-12 text-black text-center">
             Galeria de Imagens
           </h2>
-          <ImageGallery />
+          <ImageGallery variant={"noz"} />
         </div>
       </section>
 
@@ -316,40 +348,40 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl font-medium text-black">
                 Status da Obra
               </h2>
-              <StatusItem percentage={67} title={""} icon={undefined} />
+              <StatusItem percentage={5} title={""} icon={undefined} />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">
               <StatusItem
                 title="Preparação do Terreno"
-                percentage={100}
+                percentage={5}
                 icon={<Pickaxe className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Estrutura"
-                percentage={99}
+                percentage={0}
                 icon={<Building className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Esquadrias"
-                percentage={35}
+                percentage={0}
                 icon={<Columns className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Alvenaria"
-                percentage={96}
+                percentage={0}
                 icon={
                   <BrickWall className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
                 }
               />
               <StatusItem
                 title="Instalações"
-                percentage={55}
+                percentage={0}
                 icon={<Bath className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Acabamentos"
-                percentage={67}
+                percentage={0}
                 icon={
                   <PaintRoller className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
                 }
@@ -372,7 +404,8 @@ export default function Home() {
                   key={item.index}
                   className="flex justify-center items-center p-4"
                 >
-                  <div className="relative w-full max-w-4xl">
+                  <div className="flex flex-col justify-center items-center relative w-full max-w-4xl">
+                    <h3 className="text-black mb-4">{item.subtitle}</h3>
                     <Image
                       src={item.image}
                       alt={`Planta ${item.index}`}
@@ -390,46 +423,59 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 8. Jardim Tavares */}
+      {/* 8. Catolé */}
       <section className="py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8">
               <h2 className="text-2xl sm:text-3xl font-medium text-center lg:text-left text-primary-100">
-                JARDIM TAVARES
+                CATOLÉ
               </h2>
 
               <div className="space-y-4">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                  O bairro Jardim Tavares nasceu em 1957 quando foi lançado o
-                  loteamento do mesmo nome, com a proposta de alcançar o público
-                  que queria morar numa área nobre de Campina, hoje comprovado
-                  com os casarões e a vizinhaça que lá existe.
+                  <strong>
+                    Catolé — Um bairro que carrega história e constrói o futuro
+                  </strong>
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                  O Jardim Tavares está localizado em um dos pontos mais altos
-                  da cidade, privilegiando a vista e o clima mais frio de serra.
-                  É comum na época de inverno não enxergar o alto dos prédios
-                  por conta da névoa.
+                  O Catolé tem <strong>raízes</strong> profundas na história de
+                  Campina Grande. Seu nome vem do antigo Riacho Catolé, que
+                  cortava a região e deu origem a uma pequena comunidade — que,
+                  ao longo do tempo, cresceu e se tornou um dos bairros mais
+                  emblemáticos da cidade.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                  A atmosfera, tranquila e bucólica, gerada pelas frondosas
-                  árvores e seus nobres moradores, os passarinhos, faz do bairro
-                  um dos mais charmosos e desejados para quem espera viver com
-                  tranquilidade e segurança.
+                  Nascido como uma área de chácaras e terrenos amplos, o Catolé
+                  carregava a tranquilidade de um bairro em formação, rodeado
+                  pela <strong>natureza</strong> e pelo silêncio das margens.
+                  Com o crescimento urbano da cidade, foi se transformando,
+                  ganhando movimento e estrutura — mas sem jamais perder sua
+                  identidade <strong>autêntica</strong>.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
-                  Sua proximidade do centro da cidade, menos de 2 minutos de
-                  carro, e a presença do polo gastronômico em seu entorno, trás
-                  aos moradores do bairro praticidade e comodidade, para uma
-                  vida cada vez mais agitada.
+                  Hoje, o Catolé é reconhecido por sua{" "}
+                  <strong>diversidade</strong>, sua{" "}
+                  <strong>energia urbana</strong> e seu forte senso de
+                  pertencimento. Um bairro que pulsa <strong>vida</strong>, as
+                  ruas se movimentam, e ao mesmo tempo, há espaços de
+                  acolhimento, vizinhança e vida cotidiana. Um lugar onde a
+                  tradição se mistura com o contemporâneo — e onde viver faz
+                  sentido.
+                </p>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
+                  O NÓZ nasce nesse cenário, como uma resposta arquitetônica ao
+                  que o Catolé representa:
+                  <strong> história, convivência e transformação</strong>. Um
+                  projeto que respeita as origens e contribui para um futuro
+                  ainda mais humano, integrado e inspirador.
                 </p>
               </div>
             </div>
 
             <div className="relative h-64 sm:h-80 lg:h-full lg:w-full">
               <Image
-                src={jardimTavares}
+                src={catole}
                 alt="Jardim Tavares"
                 fill
                 className="object-cover"
@@ -452,7 +498,7 @@ export default function Home() {
           <div className="absolute inset-0 flex justify-center items-center">
             <button
               className="flex justify-center items-center z-10"
-              onClick={() => setIsVideoOpen(true)}
+              onClick={() => setIsVideoOpenJardimTavares(true)}
             >
               <Image
                 src={iconPlay}
@@ -464,6 +510,17 @@ export default function Home() {
             </button>
           </div>
         </div>
+
+        {isVideoOpenJardimTavares && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
+            onClick={() => setIsVideoOpenJardimTavares(false)}
+          >
+            <div className="w-full max-w-4xl">
+              <YouTube videoId="4ApCDbG-VN8" opts={opts} />
+            </div>
+          </div>
+        )}
       </section>
 
       {/* 10. Explore a Região */}
@@ -472,7 +529,7 @@ export default function Home() {
           <h2 className="text-2xl sm:text-3xl font-medium mb-8 lg:mb-12 text-center text-black">
             Explore a Região
           </h2>
-          <MapSection />
+          <MapSectionNoz />
         </div>
       </section>
 
@@ -524,7 +581,7 @@ function StatusItem({
         <div className="w-full h-2 lg:h-3 bg-gray-200 rounded-full overflow-hidden">
           <div
             className={`relative h-full rounded-full transition-all duration-500 ${
-              percentage < 100 ? "bar-animated bg-gray-400" : "bg-black"
+              percentage < 100 ? "bar-animated bg-gray-400" : "bg-secondary"
             }`}
             style={{ width: `${percentage}%` }}
           ></div>
