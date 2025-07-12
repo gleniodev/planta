@@ -44,37 +44,15 @@ import {
 import Link from "next/link";
 
 const gallery = [
-  {
-    image: "/assets/uni-ap-01-111m.webp",
-    index: 1,
-    subtitle: "Planta Final 01",
-  },
-  {
-    image: "/assets/uni-ap-02-69m.webp",
-    index: 2,
-    subtitle: "Planta Final 02",
-  },
-  {
-    image: "/assets/uni-ap-03-69m.webp",
-    index: 3,
-    subtitle: "Planta Final 03",
-  },
-  {
-    image: "/assets/uni-ap-04-110.webp",
-    index: 4,
-    subtitle: "Planta Final 04",
-  },
-  {
-    image: "/assets/uni-ap-01-unificado-181m.webp",
-    index: 5,
-    subtitle: "Possível União de Plantas",
-  },
+  { image: "/assets/uni-ap-01-111m.webp", index: 1 },
+  { image: "/assets/uni-ap-02-69m.webp", index: 2 },
+  { image: "/assets/uni-ap-03-69m.webp", index: 3 },
+  // { image: "/assets/uni-ap-04-110.webp", index: 4 },
+  { image: "/assets/uni-ap-01-unificado-181m.webp", index: 4 },
 ];
 
 export default function Home() {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
-  const [isVideoOpenJardimTavares, setIsVideoOpenJardimTavares] =
-    useState(false);
   const opts = {
     height: "480",
     width: "854",
@@ -104,7 +82,7 @@ export default function Home() {
             {/* Lado direito - informações do empreendimento */}
             <div className="flex flex-col space-y-6 lg:space-y-8">
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-center lg:text-left text-primary-100">
-                UNI 501
+                NÓZ
               </h1>
 
               <div className="space-y-6">
@@ -219,7 +197,7 @@ export default function Home() {
           <div className="mt-16 lg:mt-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
               <div className="order-1">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-primary-100 font-medium leading-tight lg:!leading-[48px] mb-8 lg:mb-12 text-justify">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-primary-100 font-medium leading-tight lg:!leading-[48px] mb-8 lg:mb-12">
                   A união de ideias, realidades, necessidades e repertórios trás
                   para o UNI 501 a pluralidade e a versatilidade que os
                   arquitetos Ricardo Nogueira e Cristiano Rolim imprimiram em
@@ -265,7 +243,7 @@ export default function Home() {
             </div>
 
             <div className="mt-12 lg:mt-16">
-              <h4 className="text-lg sm:text-xl lg:text-3xl text-primary-100 font-medium leading-relaxed text-center ">
+              <h4 className="text-lg sm:text-xl lg:text-2xl text-primary-100 font-medium leading-relaxed text-center lg:text-left">
                 São 68 apartamentos com plantas que variam de 69m² a 111m², com
                 a possibilidade de uniões chegando a 181m².
               </h4>
@@ -275,7 +253,7 @@ export default function Home() {
       </section>
 
       {/* 4. Diferenciais */}
-      <section className="py-16 sm:py-20 lg:py-8 lg:mb-16">
+      <section className="py-16 sm:py-20 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-6 lg:space-y-8">
@@ -394,8 +372,7 @@ export default function Home() {
                   key={item.index}
                   className="flex justify-center items-center p-4"
                 >
-                  <div className="flex flex-col justify-center items-center relative w-full max-w-4xl">
-                    <h3 className="text-black mb-4">{item.subtitle}</h3>
+                  <div className="relative w-full max-w-4xl">
                     <Image
                       src={item.image}
                       alt={`Planta ${item.index}`}
@@ -475,7 +452,7 @@ export default function Home() {
           <div className="absolute inset-0 flex justify-center items-center">
             <button
               className="flex justify-center items-center z-10"
-              onClick={() => setIsVideoOpenJardimTavares(true)}
+              onClick={() => setIsVideoOpen(true)}
             >
               <Image
                 src={iconPlay}
@@ -487,17 +464,6 @@ export default function Home() {
             </button>
           </div>
         </div>
-
-        {isVideoOpenJardimTavares && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
-            onClick={() => setIsVideoOpenJardimTavares(false)}
-          >
-            <div className="w-full max-w-4xl">
-              <YouTube videoId="4ApCDbG-VN8" opts={opts} />
-            </div>
-          </div>
-        )}
       </section>
 
       {/* 10. Explore a Região */}
@@ -558,7 +524,7 @@ function StatusItem({
         <div className="w-full h-2 lg:h-3 bg-gray-200 rounded-full overflow-hidden">
           <div
             className={`relative h-full rounded-full transition-all duration-500 ${
-              percentage < 100 ? "bar-animated bg-gray-400" : "bg-secondary"
+              percentage < 100 ? "bar-animated bg-gray-400" : "bg-black"
             }`}
             style={{ width: `${percentage}%` }}
           ></div>
