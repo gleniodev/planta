@@ -60,10 +60,7 @@ export default function EmpreendimentosSection() {
           viewport={{ once: true }}
           className="relative group h-[40vh] overflow-hidden rounded-xl"
         >
-          <Link
-            href="" ///produtos/noz
-            className="block h-full w-full relative"
-          >
+          <Link href="/produtos/noz" className="block h-full w-full relative">
             <Image
               src={bgNOZ}
               alt="Empreendimento Noz"
