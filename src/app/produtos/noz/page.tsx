@@ -150,7 +150,7 @@ export default function Home() {
           <div className="absolute inset-0 flex justify-center items-center">
             <button
               className="flex justify-center items-center z-10"
-              onClick={() => setIsVideoOpen(true)}
+              // onClick={() => setIsVideoOpen(true)}
             >
               <Image
                 src={iconPlay}
@@ -166,7 +166,7 @@ export default function Home() {
         {isVideoOpen && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
-            onClick={() => setIsVideoOpen(false)}
+            // onClick={() => setIsVideoOpen(false)}
           >
             <div className="w-full max-w-4xl">
               <YouTube videoId="WDgdfrErd5A" opts={opts} />
@@ -507,7 +507,7 @@ export default function Home() {
           <div className="absolute inset-0 flex justify-center items-center">
             <button
               className="flex justify-center items-center z-10"
-              onClick={() => setIsVideoOpenJardimTavares(true)}
+              // onClick={() => setIsVideoOpenJardimTavares(true)}
             >
               <Image
                 src={iconPlay}
@@ -523,7 +523,7 @@ export default function Home() {
         {isVideoOpenJardimTavares && (
           <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
-            onClick={() => setIsVideoOpenJardimTavares(false)}
+            // onClick={() => setIsVideoOpenJardimTavares(false)}
           >
             <div className="w-full max-w-4xl">
               <YouTube videoId="4ApCDbG-VN8" opts={opts} />

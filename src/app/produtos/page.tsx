@@ -40,7 +40,7 @@ export default function EmpreendimentosSection() {
               }}
             ></div>
             {/* Logo sobreposto */}
-            <div className="absolute inset-0 flex justify-start items-center pl-10">
+            <div className="absolute inset-0 flex justify-center md:justify-start items-center pl-10">
               <Image
                 src={logoUNI}
                 alt="Logo Uni501"
@@ -77,7 +77,7 @@ export default function EmpreendimentosSection() {
               }}
             ></div>
             {/* Logo sobreposto */}
-            <div className="absolute inset-0 flex justify-start items-center p-10">
+            <div className="absolute inset-0 flex justify-center md:justify-start items-center p-10">
               <Image
                 src={logoNOZ}
                 alt="Logo Noz"
