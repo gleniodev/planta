@@ -338,7 +338,7 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl font-medium text-black">
                 Status da Obra
               </h2>
-              <StatusItem percentage={67} title={""} icon={undefined} />
+              <StatusItem percentage={89} title={""} icon={undefined} />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">
@@ -349,29 +349,29 @@ export default function Home() {
               />
               <StatusItem
                 title="Estrutura"
-                percentage={99}
+                percentage={100}
                 icon={<Building className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Esquadrias"
-                percentage={35}
+                percentage={83}
                 icon={<Columns className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Alvenaria"
-                percentage={96}
+                percentage={100}
                 icon={
                   <BrickWall className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
                 }
               />
               <StatusItem
                 title="Instalações"
-                percentage={55}
+                percentage={84}
                 icon={<Bath className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
                 title="Acabamentos"
-                percentage={67}
+                percentage={92}
                 icon={
                   <PaintRoller className="w-6 h-6 sm:w-8 sm:h-8 text-black" />
                 }

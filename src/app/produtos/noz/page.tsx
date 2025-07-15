@@ -38,29 +38,39 @@ import MapSectionNoz from "@/components/ui/map-section-noz";
 
 const gallery = [
   {
-    image: "/assets/noz-ap-25.webp",
-    index: 1,
-    subtitle: "Planta Final 01",
-  },
-  {
     image: "/assets/noz-ap-27.webp",
     index: 2,
-    subtitle: "Planta Final 02",
+    subtitle: "Planta do Loft 04",
   },
   {
     image: "/assets/noz-ap-28.webp",
     index: 3,
-    subtitle: "Planta Final 03",
+    subtitle: "Planta do Loft 05",
+  },
+  {
+    image: "/assets/noz-ap-25.webp",
+    index: 1,
+    subtitle: "Planta do Loft 07",
   },
   {
     image: "/assets/noz-ap-29.webp",
     index: 4,
-    subtitle: "Planta Final 04",
+    subtitle: "Planta do Loft 09",
+  },
+  {
+    image: "/assets/noz-ap-57.webp",
+    index: 5,
+    subtitle: "Planta Final 01",
   },
   {
     image: "/assets/noz-ap-56.webp",
     index: 5,
-    subtitle: "Planta Final 04",
+    subtitle: "Planta Final 02",
+  },
+  {
+    image: "/assets/noz-ap-60.webp",
+    index: 5,
+    subtitle: "Planta Final 10",
   },
 ];
 
@@ -177,12 +187,12 @@ export default function Home() {
               <div className="space-y-4">
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
                   Localizado em um dos bairros mais nobres da cidade: o CATOLÉ!
-                  Uma Das regiões mais queridas e completas de Campina Grande, o
+                  Uma Das regiões mais queridas e completas de Campina Grande. O
                   Catolé é sinônimo de conforto, legado e movimento. Com toda
                   sua história, tradição e a essência de ser DIVERSO. Com lares,
-                  famílias, feiras,shoppings, lojas, escolas, igrejas, fámacias,
-                  o Parque da Criança e um crescimento exponencial do mercado
-                  imobiliário.
+                  famílias, feiras, shoppings, lojas, escolas, igrejas,
+                  fámacias, o Parque da Criança e um crescimento exponencial do
+                  mercado imobiliário.
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed text-justify">
                   A arquitetura do NÓZ nasce do olhar sensível de quem entende
@@ -237,18 +247,18 @@ export default function Home() {
                   tempo, o lugar e as pessoas. E é por isso que, ao olhar para
                   ele, sentimos: aqui a vida faz sentido.
                 </p>
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed before:content-['“'] after:content-['”'] italic">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed before:content-['“'] italic !mt-12">
                   Viver e sentir a vida: esse é sempre o meu ponto de partida ao
                   iniciar um novo projeto.
                 </p>
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed italic">
                   Meu primeiro olhar é sempre voltado para as pessoas — para
                   entender, com cuidado e sensibilidade, suas necessidades no
                   dia a dia. Foi com esse propósito que nasceu o NÓZ: pensado
                   para oferecer, com plenitude, o melhor contexto de vida aos
                   seus usuários.
                 </p>
-                <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed after:content-['”'] italic">
                   A versatilidade de viver no bairro Catolé me encanta. A
                   praticidade, a segurança e a possibilidade de uma vivência
                   mais presente foram as maiores inspirações na concepção deste
@@ -258,6 +268,9 @@ export default function Home() {
                   para contemplação, lounges aconchegantes de convivência e
                   ambientes que favorecem a gentileza urbana — tudo em harmonia
                   com a atmosfera verde e viva que o Catolé nos oferece.
+                </p>
+                <p className="text-base sm:text-lg text-gray-700 leading-relaxed !mb-12">
+                  (Yane Barreto Arquiteta)
                 </p>
                 <p className="text-base sm:text-lg text-gray-700 leading-relaxed">
                   O <strong>NÓZ</strong> é, em cada detalhe, feito para servir
@@ -289,8 +302,8 @@ export default function Home() {
                 Diferenciais
               </h2>
               <p className="text-xl sm:text-2xl lg:text-3xl text-gray-700 leading-relaxed text-center lg:text-left">
-                Por ter se originado de ideias de um público plural o NÓZ é um
-                projeto repleto de diferencias
+                Para atender a um bairro tão dinâmico e a um público tão plural
+                o NÓZ trás diferenciais que marcam.
               </p>
             </div>
 
@@ -321,10 +334,6 @@ export default function Home() {
                 title="Integração de espaços"
                 icon={<Blocks className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
-              <DiferencialItem
-                title="Versatilidade de plantas"
-                icon={<Flower2 className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
-              />
             </div>
           </div>
         </div>
@@ -348,13 +357,13 @@ export default function Home() {
               <h2 className="text-2xl sm:text-3xl font-medium text-black">
                 Status da Obra
               </h2>
-              <StatusItem percentage={5} title={""} icon={undefined} />
+              <StatusItem percentage={2} title={""} icon={undefined} />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 lg:gap-6">
               <StatusItem
                 title="Preparação do Terreno"
-                percentage={5}
+                percentage={42}
                 icon={<Pickaxe className="w-6 h-6 sm:w-8 sm:h-8 text-black" />}
               />
               <StatusItem
