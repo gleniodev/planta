@@ -42,6 +42,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Link from "next/link";
+import VideoModal from "@/components/ui/videoModal";
 
 const gallery = [
   {
@@ -76,10 +77,12 @@ export default function Home() {
   const [isVideoOpenJardimTavares, setIsVideoOpenJardimTavares] =
     useState(false);
   const opts = {
-    height: "480",
-    width: "854",
+    width: "100%",
+    height: "100%",
     playerVars: {
       autoplay: 1,
+      modestbranding: 1,
+      rel: 0,
     },
   };
 
@@ -165,14 +168,11 @@ export default function Home() {
         </div>
 
         {isVideoOpen && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
-            onClick={() => setIsVideoOpen(false)}
-          >
-            <div className="w-full max-w-4xl">
-              <YouTube videoId="WDgdfrErd5A" opts={opts} />
-            </div>
-          </div>
+          <VideoModal
+            isOpen={isVideoOpen}
+            onClose={() => setIsVideoOpen(false)}
+            videoId="WDgdfrErd5A"
+          />
         )}
       </section>
 
@@ -489,14 +489,11 @@ export default function Home() {
         </div>
 
         {isVideoOpenJardimTavares && (
-          <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
-            onClick={() => setIsVideoOpenJardimTavares(false)}
-          >
-            <div className="w-full max-w-4xl">
-              <YouTube videoId="4ApCDbG-VN8" opts={opts} />
-            </div>
-          </div>
+          <VideoModal
+            isOpen={isVideoOpenJardimTavares}
+            onClose={() => setIsVideoOpenJardimTavares(false)}
+            videoId="4ApCDbG-VN8"
+          />
         )}
       </section>
 
